@@ -1,1 +1,24 @@
-
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend para o sistema de pizzaria Na Tecla",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "pizzaria",
+    "backend",
+    "node.js",
+    "mysql"
+  ],
+  "author": "Gabriela Rodrigues",
+  "license": "ISC",
+  "dependencies": {
+    "mysql2": "^3.14.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
