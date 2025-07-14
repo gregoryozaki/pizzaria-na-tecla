@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - Na Tecla</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body id="login-page">
+  <header>
+    <h1>🍕 Na Tecla</h1>
+    <p>Gerenciamento de Pedidos de Pizzaria</p>
+  </header>
+
+  <nav id="main-nav"></nav>
+
+  <main>
+    <section class="card">
+      <h2>Login de Funcionário</h2>
+      <form id="loginForm">
+        <label for="loginEmail">E-mail:</label>
+        <input type="email" id="loginEmail" name="email" required>
+        <label for="loginSenha">Senha:</label>
+        <input type="password" id="loginSenha" name="senha" required>
+        <button type="submit" id="submitLogin">Entrar</button>
+        <p id="loginMessage" style="display:none;"></p>
+      </form>
+      <p>Esqueceu a senha? <a href="atualizar_senha.html">Atualizar Senha</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Na Tecla | Sistema Web de Gerenciamento de Pizzaria</p>
+  </footer>
+  <script type="module" src="js/utils.js"></script>
+  <script type="module" src="script.js"></script>
+</body>
+</html>

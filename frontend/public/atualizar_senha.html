@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atualizar Senha - Na Tecla</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body id="atualizar-senha-page">
+  <header>
+    <h1>🍕 Na Tecla</h1>
+    <p>Gerenciamento de Pedidos de Pizzaria</p>
+  </header>
+
+  <nav id="main-nav"></nav>
+
+  <main>
+    <section class="card">
+      <h2>Atualizar Senha</h2>
+      <form id="passForm">
+        <label for="updateEmail">E-mail:</label>
+        <input type="email" id="updateEmail" name="email" required>
+        <label for="updateSenha">Nova Senha:</label>
+        <input type="password" id="updateSenha" name="senha" required>
+        <button type="submit" id="submitUpdatePass">Atualizar</button>
+        <p id="updatePassMessage" style="display:none;"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Na Tecla | Sistema Web de Gerenciamento de Pizzaria</p>
+  </footer>
+  <script type="module" src="js/utils.js"></script>
+  <script type="module" src="script.js"></script>
+</body>
+</html>

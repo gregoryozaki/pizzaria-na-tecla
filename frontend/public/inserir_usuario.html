@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro de Usuário - Na Tecla</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body id="cadastro-usuario-page">
+  <header>
+    <h1>🍕 Na Tecla</h1>
+    <p>Gerenciamento de Pedidos de Pizzaria</p>
+  </header>
+
+  <nav id="main-nav"></nav>
+
+  <main>
+    <section class="card">
+      <h2>Cadastro de Usuário</h2>
+      <form id="userForm">
+        <label for="cadastroNome">Nome:</label>
+        <input type="text" id="cadastroNome" name="nome" required>
+        <label for="cadastroEmail">E-mail:</label>
+        <input type="email" id="cadastroEmail" name="email" required>
+        <label for="cadastroSenha">Senha:</label>
+        <input type="password" id="cadastroSenha" name="senha" required>
+        <label for="cadastroTipo">Tipo:</label>
+        <select id="cadastroTipo" name="tipo">
+          <option value="atendente">Atendente</option>
+          <option value="admin">Admin</option>
+        </select>
+        <button type="submit" id="submitCadastro">Cadastrar</button>
+        <p id="cadastroMessage" style="display:none;"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Na Tecla | Sistema Web de Gerenciamento de Pizzaria</p>
+  </footer>
+  <script type="module" src="js/utils.js"></script>
+  <script type="module" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro de Produto - Na Tecla</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body id="cadastro-produto-page">
+  <header>
+    <h1>🍕 Na Tecla</h1>
+    <p>Gerenciamento de Pedidos de Pizzaria</p>
+  </header>
+
+  <nav id="main-nav"></nav>
+
+  <main>
+    <section class="card">
+      <h2>Cadastro de Produto</h2>
+      <form id="productForm">
+        <label for="produtoNome">Nome:</label>
+        <input type="text" id="produtoNome" name="nome" required>
+        <label for="produtoDescricao">Descrição:</label>
+        <textarea id="produtoDescricao" name="descricao"></textarea>
+        <label for="produtoPreco">Preço:</label>
+        <input type="number" id="produtoPreco" name="preco" step="0.01" required>
+        <label for="produtoTipo">Tipo:</label>
+        <select id="produtoTipo" name="tipo">
+          <option value="pizza">Pizza</option>
+          <option value="bebida">Bebida</option>
+          <option value="adicional">Adicional</option>
+        </select>
+        <button type="submit" id="submitProduto">Cadastrar</button>
+        <p id="produtoMessage" style="display:none;"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Na Tecla | Sistema Web de Gerenciamento de Pizzaria</p>
+  </footer>
+  <script type="module" src="js/utils.js"></script>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
